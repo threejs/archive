@@ -9,13 +9,19 @@
 		<link rel="stylesheet" type="text/css" href="../files/main.css">
 		<style>
 			#deprecation-notice {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
 				background-color: #fffacd;
 				color: #333333;
 				padding: 12px 20px;
 				text-align: center;
 				font-weight: 500;
 				border-bottom: 1px solid #f0e68c;
-				z-index: 10000;
+				z-index: 10001;
+				height: 46px;
+				box-sizing: border-box;
 			}
 			#deprecation-notice a {
 				color: #0066cc;
@@ -24,6 +30,20 @@
 			}
 			#deprecation-notice a:hover {
 				color: #004499;
+			}
+			#panel {
+				top: 46px !important;
+				height: calc(100% - 46px) !important;
+			}
+			#viewer, iframe {
+				top: 46px !important;
+				height: calc(100% - 46px) !important;
+			}
+			@media all and ( max-width: 640px ) {
+				#viewer, iframe {
+					top: calc(var(--header-height) + 46px) !important;
+					height: calc(100% - var(--header-height) - 46px) !important;
+				}
 			}
 		</style>
 		<!-- console sandbox -->
