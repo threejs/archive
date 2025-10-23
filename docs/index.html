@@ -7,6 +7,25 @@
 		<link rel="shortcut icon" href="../files/favicon_white.ico" media="(prefers-color-scheme: dark)"/>
 		<link rel="shortcut icon" href="../files/favicon.ico" media="(prefers-color-scheme: light)" />
 		<link rel="stylesheet" type="text/css" href="../files/main.css">
+		<style>
+			#deprecation-notice {
+				background-color: #fffacd;
+				color: #333333;
+				padding: 12px 20px;
+				text-align: center;
+				font-weight: 500;
+				border-bottom: 1px solid #f0e68c;
+				z-index: 10000;
+			}
+			#deprecation-notice a {
+				color: #0066cc;
+				text-decoration: underline;
+				font-weight: 600;
+			}
+			#deprecation-notice a:hover {
+				color: #004499;
+			}
+		</style>
 		<!-- console sandbox -->
 		<script type="module">
 			import * as THREE from '../build/three.module.js';
@@ -14,6 +33,9 @@
 		</script>
 	</head>
 	<body>
+		<div id="deprecation-notice">
+			⚠️ Archived documentation. For the latest version, visit <a href="https://threejs.org/docs/">threejs.org/docs</a>.
+		</div>
 		<div id="panel">
 
 			<div id="header">
