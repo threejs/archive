@@ -1,8 +1,8 @@
 if ( ! window.frameElement && window.location.protocol !== 'file:' ) {
 
 	// navigates to docs home if direct access, e.g.
-	//   https://mrdoob.github.io/three.js/docs/api/en/audio/Audio.html#filter
-	// ->https://mrdoob.github.io/three.js/docs/#api/en/audio/Audio.filter
+	//   https://threejs.org/docs/api/en/audio/Audio.html#filter
+	// ->https://threejs.org/docs/#api/en/audio/Audio.filter
 
 	const url = new URL( window.location.href );
 
