@@ -40,6 +40,15 @@
 				height: calc(100% - 46px) !important;
 			}
 			@media all and ( max-width: 640px ) {
+				#panel {
+					pointer-events: none;
+				}
+				#panel #expandButton {
+					pointer-events: auto;
+				}
+				#panel.open {
+					pointer-events: auto;
+				}
 				#viewer, iframe {
 					top: calc(var(--header-height) + 46px) !important;
 					height: calc(100% - var(--header-height) - 46px) !important;
